@@ -31,21 +31,16 @@ a:hover {
 .site-header {
   background-color: #333333;
   color: #ffffff;
-  padding: 16px 32px;
+  padding: 8px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.logo span {
-  color: #B93636;
-  font-size: 2rem;
+#logo{
+  height: 130px;
+  width: auto;
+  object-fit: contain;
 }
 
 #nav-list {
@@ -165,7 +160,7 @@ p {
   margin-top: 16px;
 }
 
-.resources {
+.resource {
   background-color: #FFFDF9;
   border: 1px solid #E2D5C3;
   border-radius: 8px;
