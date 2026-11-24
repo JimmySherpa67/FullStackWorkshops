@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevTrack Academy</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="logo">DevTrack <span>Academy</span></a>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main>
+
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Open study hub for tech learners</p>
+          <h1>Build real-world skills with DevTrack</h1>
+          <p>Structured project guides, hands-on labs, reference sheets, and revision media in one place. Choose a track, practice with real tools, and ship projects every week.</p>
+          <a href="#courses" class="button">Explore courses</a>
+        </div>
+        <img src="images/hero-workspace.jpg" alt="Developer sketching an app layout on a tablet beside a laptop">
+      </section>
+
+      <section id="courses">
+        <h2>Available Tracks</h2>
+        <p>Pick a specialized track to start building. Each course comes with weekly labs, starter files, and a capstone challenge.</p>
+        <div class="card-group">
+          <article class="course-card">
+            <img src="images/course-uiux.jpg" alt="Wireframes and interface components arranged on a design canvas">
+            <h3>UI/UX &amp; Product Design</h3>
+            <p>Design intuitive digital products using wireframing, typography, accessibility standards, and interactive prototypes in Figma.</p>
+            <ul class="course-meta">
+              <li>Level: Beginner</li>
+              <li>Length: 5 weeks</li>
+            </ul>
+            <a href="#resources">See resources</a>
+          </article>
+
+          <article class="course-card">
+            <img src="images/course-datasci.jpg" alt="Laptop displaying Python data charts and heatmaps">
+            <h3>Python for Data Science</h3>
+            <p>Clean, analyze, and visualize real-world datasets using Python, Pandas, NumPy, and Matplotlib to uncover actionable insights.</p>
+            <ul class="course-meta">
+              <li>Level: Beginner</li>
+              <li>Length: 6 weeks</li>
+            </ul>
+            <a href="#resources">See resources</a>
+          </article>
+
+          <article class="course-card">
+            <img src="images/course-gamedev.jpg" alt="3D game environment open inside a game engine editor">
+            <h3>Game Development with Unity</h3>
+            <p>Create playable 2D and 3D games from scratch by learning C# scripting, physics engines, level design, and character controllers.</p>
+            <ul class="course-meta">
+              <li>Level: Intermediate</li>
+              <li>Length: 8 weeks</li>
+            </ul>
+            <a href="#resources">See resources</a>
+          </article>
+
+          <article class="course-card">
+            <img src="images/course-linux.jpg" alt="Dark terminal window running Linux shell commands">
+            <h3>Operating Systems &amp; Linux</h3>
+            <p>Explore how operating systems manage processes, memory, and file systems while mastering the Linux command line and Bash scripting.</p>
+            <ul class="course-meta">
+              <li>Level: Intermediate</li>
+              <li>Length: 7 weeks</li>
+            </ul>
+            <a href="#resources">See resources</a>
+          </article>
+
+          <article class="course-card">
+            <img src="images/course-qa.jpg" alt="Automated test suite dashboard showing passing checks">
+            <h3>Software Testing &amp; QA</h3>
+            <p>Ship reliable software by writing unit tests, automating end-to-end browser checks, tracking bugs, and integrating tests into CI pipelines.</p>
+            <ul class="course-meta">
+              <li>Level: Beginner</li>
+              <li>Length: 4 weeks</li>
+            </ul>
+            <a href="#resources">See resources</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="resources">
+        <h2>Toolkit &amp; References</h2>
+        <p>Curated documentation and interactive sandboxes to help you practice. External links open in a new tab.</p>
+        <div class="resource-grid">
+          <article class="resource featured">
+            <h3>Figma Learn</h3>
+            <p>Official tutorials covering auto-layout, component libraries, and interactive prototyping for modern interfaces.</p>
+            <a href="https://help.figma.com/hc/en-us" target="_blank" rel="noopener">Open Figma Learn</a>
+          </article>
+          <article class="resource">
+            <h3>Kaggle Learn</h3>
+            <p>Hands-on micro-courses for Python, Pandas, and data visualization using live browser notebooks.</p>
+            <a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Visit Kaggle Learn</a>
+          </article>
+          <article class="resource">
+            <h3>Unity Learn</h3>
+            <p>Step-by-step pathways for C# game programming, lighting, animation, and scene optimization.</p>
+            <a href="https://learn.unity.com/" target="_blank" rel="noopener">Start Unity Learn</a>
+          </article>
+          <article class="resource">
+            <h3>Linux Journey</h3>
+            <p>Clear, interactive lessons on shell commands, permissions, processes, and system administration.</p>
+            <a href="https://linuxjourney.com/" target="_blank" rel="noopener">Explore Linux Journey</a>
+          </article>
+          <article class="resource">
+            <h3>Playwright Docs</h3>
+            <p>Guides and examples for writing fast, reliable end-to-end tests across modern web browsers.</p>
+            <a href="https://playwright.dev/docs/intro" target="_blank" rel="noopener">Read Playwright Docs</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="media">
+        <h2>Studio &amp; Sessions</h2>
+        <p>Bite-sized demos, audio discussions, and workflow snapshots to sharpen your daily practice.</p>
+        <div class="media-group">
+          <figure>
+            <video controls preload="metadata" poster="images/git-thumb.jpg">
+              <source src="video/git-branching.mp4" type="video/mp4">
+              Your browser cannot play this video. <a href="video/git-branching.mp4">Download the video</a> instead.
+            </video>
+            <figcaption>Quick demo: resolving Git merge conflicts cleanly in under 90 seconds.</figcaption>
+          </figure>
+          <figure>
+            <audio controls preload="metadata">
+              <source src="audio/tech-talk.mp3" type="audio/mpeg">
+              Your browser cannot play this audio. <a href="audio/tech-talk.mp3">Download the episode</a> instead.
+            </audio>
+            <figcaption>DevTrack Audio, Episode 4: building consistency without burning out.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/whiteboard-plan.jpg" alt="Whiteboard covered with user flow arrows and wireframe boxes">
+            <figcaption>Sketching user flows on paper or a whiteboard saves hours of rewriting code later.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+    </main>
+
+    <aside>
+      <h2>Student Desk</h2>
+      <h3>Practice habits</h3>
+      <ol>
+        <li>Build a small project after every new topic.</li>
+        <li>Read error messages line by line before searching.</li>
+        <li>Commit your progress to Git at the end of each session.</li>
+      </ol>
+      <h3>Upcoming milestones</h3>
+      <ul>
+        <li><strong>Week 3:</strong> Figma wireframe review</li>
+        <li><strong>Week 5:</strong> Pandas data report</li>
+        <li><strong>Week 7:</strong> Linux shell script lab</li>
+      </ul>
+      <h3>Quick links</h3>
+      <ul>
+        <li><a href="https://docs.github.com/" target="_blank" rel="noopener">GitHub Documentation</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp Guides</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer id="contact" class="site-footer">
+    <div class="footer-col">
+      <h2>DevTrack Academy</h2>
+      <p>Project-based learning hub for aspiring developers and designers.</p>
+    </div>
+    <div class="footer-col">
+      <h2>Contact</h2>
+      <p>Kathmandu, Nepal</p>
+      <p><a href="mailto:hello@devtrack.example.com">hello@devtrack.example.com</a></p>
+    </div>
+    <div class="footer-col">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </div>
+    <p class="copyright">© 2026 DevTrack Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

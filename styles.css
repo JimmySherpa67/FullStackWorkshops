@@ -1,0 +1,276 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #F5EBDD;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #B93636;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e05a5a;
+}
+
+/* Header & Navigation */
+.site-header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logo span {
+  color: #B93636;
+  font-size: 2rem;
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#nav-list a {
+  color: #EFECD7;
+  font-weight: bold;
+}
+
+#nav-list a:hover {
+  color: #ffffff;
+}
+
+/* Main Page Layout (Main + Sidebar) */
+.layout {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 24px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+  color: #1f1a17;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #FFFDF9;
+  border: 1px solid #E2D5C3;
+  padding: 24px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #B93636;
+}
+
+.hero img {
+  border-radius: 6px;
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.button {
+  display: inline-block;
+  background-color: #B93636;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #922828;
+  text-decoration: none;
+}
+
+/* Course Cards */
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.course-card {
+  background-color: #FFFDF9;
+  border: 1px solid #E2D5C3;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.course-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.course-meta {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #6b5e54;
+  margin-bottom: 12px;
+}
+
+/* Resources Grid */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.resources {
+  background-color: #FFFDF9;
+  border: 1px solid #E2D5C3;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.resource.featured {
+  border-left: 4px solid #B93636;
+}
+
+/* Media Section */
+.media-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+figure {
+  background-color: #FFFDF9;
+  border: 1px solid #E2D5C3;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+figure img,
+figure video {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+figure audio {
+  width: 100%;
+  margin: 20px 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #5c534a;
+  margin-top: 8px;
+}
+
+/* Sidebar */
+aside {
+  background-color: #FFFDF9;
+  border: 1px solid #E2D5C3;
+  border-radius: 8px;
+  padding: 20px;
+  height: fit-content;
+}
+
+aside ul,
+aside ol {
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+aside li {
+  margin-bottom: 6px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333333;
+  color: #e5dfd5;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.site-footer h2 {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+
+.site-footer a {
+  color: #EFECD7;
+}
+
+.copyright {
+  grid-column: 1 / -1;
+  text-align: center;
+  border-top: 1px solid #4d4d4d;
+  padding-top: 16px;
+  margin-top: 12px;
+  font-size: 0.85rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .layout,
+  .hero,
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+}
